@@ -1,0 +1,11 @@
+name: demnistrar
+hosts: localhosts
+gather_facts: no
+connection: local
+vars:
+  namespace: emsya-dev
+  module_defaults:
+    group/k8s:
+      namespace: "{{ namespace }}"
+      api_key: sha256~FDRfY15J4B-gfE5ht8EuKUGs0P-cYqgu_kUtfDekrjk"
+      host: 
